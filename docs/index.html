@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./sol.css">
+    <script lang = text/javascript src="./sol.js"></script>
+    
+</head>
+<body> 
+    
+    <div>
+        <nav class="navigation">
+            <a href="#">Home<span>Page</span></a>
+            <a href="https://github.com/sasidhar-programmer" id = "gitt" target="_blank">Github Repo</a>
+        </nav>
+    </div>
+
+
+
+<section id="heading"> 
+
+    <div class="headings">
+        <ul class = "links">
+           <li> <a href="#">Numbers From 0 to 20</a> </li>
+           <li> <a href="#">even numbers</a></li>
+           <li> <a href="#">odd numbers</a></li>
+           <li> <a href="#">multiplication numbers</a></li>
+           <li> <a href="#">multiples of three</a></li>
+           <li> <a href="#">skipping multiples of five</a></li>
+           <li> <a href="#palin_num">Palindrome</a></li>
+           <li> <a href="#arm_num">Armstrong</a></li>
+           <li> <a href=#prime_number>prime numbers</a></li>
+           <li> <a href="#">sum of n numbers</a></li>
+           <li> <a href=#fact_num>factorial of number</a></li> 
+           <li> <a href="#">fib sum of a number</a></li>
+
+        </ul>
+    </div>
+        
+</section>
+
+
+<section>  
+
+    <div id="prime_number">
+
+        <center> 
+        <h1>Prime Number checker</h1>
+        <label class ="input_1">Input : </label> 
+        <input type="text" id = "prime_input" requried> 
+        
+
+        <br>
+
+        <div class = "prime_div">
+        <label class="lab">Prime Number </label>
+        <input type="button" id="prime" name="prime" value="Execute" onclick="prime_check();">
+
+
+        <label for="prime_ans">
+            <input type="text" id = "prime_ans">
+        </label>
+
+        </div> 
+
+        </center>
+ 
+
+    </div>
+
+</section>
+
+
+
+<section>
+     
+    <div id="fact_num"> 
+    <center>
+
+        
+        <h1>factorial program</h1>
+        <label class ="input_2">Input_2 : </label> 
+        <input type="text" id = "fact_input" > 
+        
+
+        <br> 
+
+        <label class ="facto">factorial of a number : </label> 
+        <input type="button" id = "fact_button" value="execute" onclick="fact_output.value = fact(fact_input.value);">
+        <input type="text" id = "fact_output"> 
+
+
+    </center>
+    </div>
+</section>
+
+
+<section>
+    <div id = "arm_num">  
+         <center>
+             <h1>Armstrong number</h1> 
+             <label class="input_3">Input : </label> 
+             <input type="text" id = "arm_input"> 
+
+             <br>
+
+             <label class="arm">Armstrong number : </label> 
+             <input type="button" id = "arm_button" value = "execute" onclick="armstrong();"> 
+             <input type="text" id = "arm_output">
+         </center>
+    </div>
+</section>
+
+<section>
+    <div id = "palin_num"> 
+        <center>
+            <h1>Palindrome Number</h1> 
+            <label class="input_4">Input : </label> 
+            <input type="text"  id = "palin_input">
+
+            <br>
+
+            <label class="palin">Palindrome Number : </label> 
+            <input type="button" id = "palin_button" value = "execute" onclick="palindrome();"> 
+            <input type="text" id = "palin_output">
+        </center>
+    </div>
+</section>
+
+
+
+    
+</body>
+</html>
+
