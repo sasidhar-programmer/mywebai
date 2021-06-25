@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplication</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="../css/factorial.css">
+</head>
+<body>
+        <script type="text/javascript">
+
+            $(function () {
+                $(".nav2").load("./nav.html")
+            });
+        </script>
+        <nav class="nav2"></nav>
+
+        <script type="text/javascript" > 
+
+            function mul_of_num(num) { 
+
+            let string = ""; 
+
+            for(var i = 1; i<=10; i++) { 
+
+                string += num +"x"+ i + "=" + num * i +"\n" ;
+                }
+
+                output.value = string;
+            }
+
+        </script>
+
+        <h1>Multiplication of number</h1> 
+
+        <center>
+            <div class="code_container">
+        
+                <div class="result">
+                    <label id="label">Input
+                    </label>
+                    <input type="text" id="input" placeholder="number">
+                    <br>
+                    <input type="button" value="execute" id="button" onclick="mul_of_num(input.value);">
+                    <textarea id = "output" rows= 6  cols="21"></textarea>
+                </div>
+        
+                <code>
+                    <pre> 
+
+
+function mul_of_num(num) { 
+
+    let string = ""; 
+
+    for(var i = 1; i<=10; i++) { 
+
+    string += num +"x"+ i + "=" + num * i +"\n" ;
+        }
+
+        output.value = string;
+    }
+
+
+        
+
+      
+            </pre>
+                </code>
+        
+        
+            </div>
+        </center>
+
+
+    
+</body>
+</html>

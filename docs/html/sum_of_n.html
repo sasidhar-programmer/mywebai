@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sum of numbers</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="../css/factorial.css">
+</head>
+<body>
+        <script type="text/javascript">
+
+            $(function () {
+                $(".nav2").load("./nav.html")
+            });
+        </script>
+        <nav class="nav2"></nav>
+
+        <script type="text/javascript" > 
+
+
+        // program to display the sum of natural numbers
+
+        function sum_of_num(number) { 
+        
+
+            let sum = 0;
+
+            // looping from i = 1 to number
+            // in each iteration, i is increased by 1
+            for (let i = 1; i <= number; i++) {
+                sum += i;
+            } 
+
+            return sum; 
+        }
+
+       
+        </script>
+
+        <h1>Sum of N natural numbers</h1> 
+
+        <center>
+            <div class="code_container">
+        
+                <div class="result">
+                    <label id="label">Input
+                    </label>
+                    <input type="text" id="input">
+                    <br>
+                    <input type="button" value="execute" id="button" onclick="output.value = sum_of_num(input.value);">
+                    <input type="text" id="output">
+                </div>
+        
+                <code>
+                    <pre> 
+
+    function sum_of_num(number) { 
+
+
+        let sum = 0;
+
+        // looping from i = 1 to number
+        // in each iteration, i is increased by 1
+
+        for (let i = 1; i<= number; i++) {
+            sum += i;
+        } 
+
+        return sum; 
+    }
+
+      
+            </pre>
+                </code>
+        
+        
+            </div>
+        </center>
+
+
+    
+</body>
+</html>

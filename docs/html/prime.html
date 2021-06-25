@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime Number</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="../css/prime.css">
+</head>
+<body> 
+
+    <script type="text/javascript"> 
+
+    $(function() { 
+        $(".nav2").load("./nav.html")
+    });
+    
+    </script>
+
+    <script type="text/javascript"> 
+    var prime_check = function() {  
+        var num = prime_input.value; 
+        
+        var check = 0; 
+            if(num == 0 || num == 1) { check ++ }
+      
+            else { 
+
+            for(var i = 2; i < num; i ++) { 
+      
+                if(num % i == 0) { 
+                    check ++; 
+                }
+      
+            }
+        }  
+        if(check == 0) {      
+            prime_output.value = "prime number";
+            
+        } else { 
+            prime_output.value = "Not a prime"; 
+         }
+    } 
+
+
+    
+    </script>
+
+    <nav class="nav2"> </nav>
+
+
+    <h1 id="h1"> Prime number program</h1>
+
+ 
+
+<center> 
+<div class="code_container"> 
+
+<div class="result">
+<label id = "prime_label">Input </label>
+<input type="text" id = "prime_input"> <br>
+<input type="button" value="execute" id="prime_button" onclick="prime_check();">
+<input type="text" id = "prime_output">  </div>
+
+<code> <pre> 
+    var prime_check = function() {  
+        var num = prime_input.value; 
+        
+        var check = 0; 
+            if(num == 0 || num == 1) { check ++ }
+      
+            else { 
+
+            for(var i = 2; i < num; i ++) { 
+      
+                if(num % i == 0) { 
+                    check ++; 
+                }
+      
+            }
+        }  
+        if(check == 0) {      
+            prime_ans.value = "prime number";
+            
+        } else { 
+            prime_ans.value = "Not a prime"; 
+         }
+    } 
+    </pre>
+</code> 
+
+ 
+
+</div>
+</center>
+
+
+</body>
+</html>

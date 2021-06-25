@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Armstrong number</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="../css/armstrong.css">
+
+    </head>
+    <body>
+        <script type="text/javascript">
+
+            $(function () {
+                $(".nav2").load("./nav.html")
+            });
+        </script>
+        <nav class="nav2"></nav>
+
+        <script type="text/javascript">
+
+    var armstrong = function () {
+
+        var num = arm_input.value;
+
+        var temp = num;
+        var sum = 0;
+
+        while (num > 0) {
+
+            digit = num % 10;
+            sum += Math.pow(digit, 3);
+            num = Math.floor(num / 10);
+            }
+
+        if (sum == temp) {
+            arm_output.value = temp + " " + "is Armstrong number";
+        } else {
+            arm_output.value = "not Armstrong number"
+        }
+
+    }
+        </script>
+        <h1>Armstrong number</h1>
+
+
+        <center>
+            <div class="code_container">
+
+                <div class="result">
+                    <label id="arm_label">Input
+                    </label>
+                    <input type="text" id="arm_input">
+                    <br>
+                    <input type="button" value="execute" id="arm_button" onclick="armstrong();">
+                    <input type="text" id="arm_output">
+                </div>
+
+                <code>
+                    <pre> 
+
+        var armstrong = function() {  
+
+            var num = arm_input.value; 
+    
+            var temp = num; 
+            var sum = 0 ; 
+    
+            while(num > 0) { 
+                
+                digit  = num % 10 ; 
+                sum += Math.pow(digit, 3) ; 
+                num = Math.floor(num/10); 
+            } 
+    
+            if(sum == temp) { 
+
+                return "Armstrong number" ; 
+            } else { 
+
+                return "not Armstrong number";
+            }
+    
+        }
+             
+            </pre>
+                </code>
+
+
+            </div>
+        </center>
+
+
+    </body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>factorial program</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="../css/factorial.css">
+</head>
+<body>
+
+    <body>
+        <script type="text/javascript">
+
+            $(function () {
+                $(".nav2").load("./nav.html")
+            });
+        </script>
+        <nav class="nav2"></nav>
+
+        <script type="text/javascript" > 
+
+        function fact(n){
+        //base case
+        
+        if(n == 0 || n == 1){
+            return 1;
+        //recursive case
+        }else{
+            return n * fact(n-1);
+        }
+    }
+
+        </script>
+
+        <h1>Factorial program</h1> 
+
+        <center>
+            <div class="code_container">
+        
+                <div class="result">
+                    <label id="label">Input
+                    </label>
+                    <input type="text" id="input">
+                    <br>
+                    <input type="button" value="execute" id="button" onclick="output.value = fact(input.value);">
+                    <input type="text" id="output">
+                </div>
+        
+                <code>
+                    <pre> 
+
+        function fact(n){
+            //base case
+            if(n == 0 || n == 1){
+                return 1;
+            //recursive case
+            }else{
+                return n * fact(n-1);
+            }
+        }
+            </pre>
+                </code>
+        
+        
+            </div>
+        </center>
+
+
+    
+</body>
+</html>

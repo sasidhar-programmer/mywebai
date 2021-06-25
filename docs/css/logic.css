@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
+
+
+html { 
+    background: url(./images/water.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+.grid-container { 
+    display: grid;
+    grid-template-columns: 490px 400px 400px 400px;
+    grid-gap: 10px; 
+    background-color: none;
+    padding: 10px;
+    margin-top: 20px;
+    opacity: 0.7;
+    grid-column-gap: 40px;
+} 
+
+.grid-container > a { 
+    background-color: black;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 26px;
+    font-family: "Pangolin";
+    text-decoration: none;
+    color : white;
+    
+}
+
+
+
+
+.links:hover { 
+    background-color: blueviolet;
+}
+
+

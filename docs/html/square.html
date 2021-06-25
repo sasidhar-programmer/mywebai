@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>square pattern</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="../css/factorial.css">
+</head>
+<body>
+        <script type="text/javascript">
+
+            $(function () {
+                $(".nav2").load("./nav.html")
+            });
+        </script>
+        <nav class="nav2"></nav>
+
+        <script type="text/javascript" > 
+
+        function star(n) { 
+
+             // you can take input from prompt or change the value
+            let string = "";
+            for (let i = 1; i <= n; i++) { // external loop
+            for (let j = 0; j < n; j++) { // internal loop
+                string += "*";
+            }
+            string += "\n";
+            }
+            output.value = string 
+        }
+
+        </script>
+
+        <h1>Square Pattern</h1> 
+
+        <center>
+            <div class="code_container">
+        
+                <div class="result">
+                    <label id="label">Input
+                    </label>
+                    <input type="text" id="input" placeholder="no of stars in each row">
+                    <br>
+                    <input type="button" value="execute" id="button" onclick="star(input.value);">
+                    <textarea id = "output" rows= 5  cols="21"></textarea>
+                </div>
+        
+                <code>
+                    <pre> 
+
+        function star(n) { 
+
+            let string = "";
+            for (let i = 1; i <= n; i++) { 
+            for (let j = 0; j < n; j++) { 
+                string += "*";
+            }
+            string += "\n";
+            }
+            output.value = string 
+        }
+            </pre>
+                </code>
+        
+        
+            </div>
+        </center>
+
+
+    
+</body>
+</html>

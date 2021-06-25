@@ -1,0 +1,57 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap');
+
+
+html { 
+    background: url(./images/pexels-tranmautritam-69432.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+
+h1 { 
+    font-family: Caveat, cursive; 
+    color : #ffff;
+    font-weight: 100;
+    font-size: 60px;
+    margin-top: 150px;
+    text-align: center;
+    
+}
+
+
+ul  { 
+    margin-top: 100px;
+}
+
+
+.links, li, a{ 
+    font-family: Georgia, 'Times New Roman', Times, serif; 
+    list-style: none;
+    font-size: 35px;
+    font-style:oblique;
+    color: rgb(117, 56, 119); 
+    font-weight: 500;
+    text-align: center;
+    text-decoration: none;
+    padding: 3px;
+    margin-top: -10px;
+    
+} 
+
+a { 
+    background: black; 
+    color : white;
+    border-radius: 5px;
+    
+}
+span { 
+    background: black;
+    color : magenta;
+    border-radius: 6px;
+    border-style: solid;
+}
+

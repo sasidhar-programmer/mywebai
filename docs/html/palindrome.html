@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palindrome</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="../css/palindrome.css">
+</head>
+<body>
+
+    <body>
+        <script type="text/javascript">
+
+            $(function () {
+                $(".nav2").load("./nav.html")
+            });
+        </script>
+        <nav class="nav2"></nav>
+     <!----------------------------------------------------------------------------->
+        <script type="text/javascript">
+
+    var palindrome = function() { 
+
+    var num = palin_input.value; 
+
+    var temp = num; 
+    var reverse = 0; 
+  
+    while(num > 0) { 
+        digit = num % 10; 
+        reverse = reverse * 10 + digit; 
+        num = Math.floor(num/10); 
+  
+    } 
+  
+    if(temp == reverse) { 
+        palin_output.value = temp +" "+ "is palindrome"; 
+    } else { 
+        palin_output.value = temp +" "+ "is not palindrome";
+    }
+        }
+
+        </script>
+
+    <h1>Palindrome program</h1>
+
+<center>
+    <div class="code_container">
+
+        <div class="result">
+            <label id="palin_label">Input
+            </label>
+            <input type="text" id="palin_input">
+            <br>
+            <input type="button" value="execute" id="palin_button" onclick="palindrome();">
+            <input type="text" id="palin_output">
+        </div>
+
+        <code>
+            <pre> 
+
+        var palindrome = function() { 
+
+            var num = palin_input.value; 
+        
+            var temp = num; 
+            var reverse = 0; 
+            
+            while(num > 0) { 
+                digit = num % 10; 
+                reverse = reverse * 10 + digit; 
+                num = Math.floor(num/10); 
+            
+            } 
+            
+            if(temp == reverse) { 
+                return "palindrome"; 
+            } else { 
+                return "not palindrome";
+            }
+        }
+     
+    </pre>
+        </code>
+
+
+    </div>
+</center>
+    
+</body>
+</html>

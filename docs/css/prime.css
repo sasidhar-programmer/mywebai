@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
+
+
+body { 
+    background: #F2F2F2;
+    font-family: "Pangolin";
+
+}
+
+h1 { 
+    text-align: center;
+    background-color: blueviolet;
+    color: black;
+    opacity: 0.5;
+}
+
+
+.code_container { 
+
+    font-family: "Pangolin"; 
+    font-size: 26px;
+    line-height: 100%;
+    border-style: solid;
+    border-radius: 3px;
+    border-width: 0px;
+    border-left :6px solid blueviolet;
+    padding: 0em; 
+    background: lightblue; 
+    color : black;
+    margin-left: 1em;
+    margin-bottom: 1em;
+    text-align: left;
+    width: 800px;
+  
+    
+}
+.result #prime_label ,#prime_input, #prime_output, #prime_button{ 
+    font-size: 29px;
+    margin-left: 15px;
+    
+}
+
+#prime_label ,#prime_input {
+    margin-top: 25px;
+}
+#prime_output, #prime_button{
+    margin-top: 25px;
+}
+#prime_input { 
+    margin-left: 67px;
+}
+
+#prime_button { 
+    background: blue;
+    color : white;
+    border-radius: 7px;
+    border-style: solid;
+}
